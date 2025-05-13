@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: content-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color:white ;
+      color: purple;
+      line-height: 1.6;
+      background-image: url('https://wallpaperaccess.com/full/5651992.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeDown 1s ease-in-out;
+    }
+
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #00bfff;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      margin-top: 30px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 1s ease forwards;
+    }
+
+    section:nth-of-type(2) { animation-delay: 0.3s; }
+    section:nth-of-type(3) { animation-delay: 0.6s; }
+    section:nth-of-type(4) { animation-delay: 0.9s; }
+    section:nth-of-type(5) { animation-delay: 1.2s; }
+
+    .project-card {
+      background: white;
+      padding: 20px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      text-align: center;
+      background: #eee;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    a {
+      color: #007bff;
+    }
+
+    /* Animations */
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm Jyoshika Manem</h1>
+    <p>Web Developer | CSE Student | Tech Enthusiast</p>
+  </header>
+
+  <nav>
+    <a href="#about">about</a>
+    <a href="#skills">skills</a>
+    <a href="#projects">projects</a>
+    <a href="#contact">contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a 2nd year B.Tech CSE (AI & DS) student at Vishnu Institute of Technology with a strong passion for web development and problem-solving.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Python, Java (Basics)</li>
+      <li>Git & GitHub</li>
+      <li>Teamwork, Communication</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>StudySync DT&I project.</h3>
+      <p>A smart web platform for students to manage schedules, study groups, and deadlines.</p>
+    </div>
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>This is a simple responsive personal website built using HTML and CSS.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:jyoshikamanem156@gmail.com">jyoshikamanem156@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/jyoshika-manem-b3b56a322" target="_blank">www.linkedin.com/in/jyoshika-manem-b3b56a322</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Jyoshika. All rights reserved.</p>
+  </footer>
+</body>
+</html>
